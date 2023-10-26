@@ -1,6 +1,7 @@
 commands:
-	python3 -m venv venv
-	source venv/bin/activate
+	python -m venv .venv
+	pdm use .venv/Scripts/activate
+	pdm install
 
 nextjs-packages:
 	pnpm add concurrently zustand
